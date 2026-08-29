@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "ZETHUB | Violence District | v174",
+   Name = "ZETHUB | Violence District | v175",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loading......",
    LoadingSubtitle = "By Zeutronxsite",
@@ -34,7 +34,7 @@ local Theme = Window:CreateTab("🎨 Theme & Settings", nil)
 local MainSection = Change:CreateSection("Information & Version")
 
 local Paragraph = Change:CreateParagraph({Title = "✅ VERSION 174", Content = "- [+] Add Scipts GUI And Auto farm\n- [+] Add Changelog\n- [+] Add Theme and Destroy"})
-
+local Paragraph = Change:CreateParagraph({Title = "✅ VERSION 175", Content = "- [+] Add More Scripts"})
 
 local MainSection = MainTab:CreateSection("Scripts UI/GUI")
 
@@ -78,13 +78,24 @@ local function runScript(optionName)
         task.wait(0.5)
         pcall(function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/zeutronxsite/N8GYFQc7DestrictV3/refs/heads/main/nTon3cet"))()
+
+    elseif optionName == "4LynxX [FREE]" then
+        Rayfield:Notify({
+            Title = "Executed Scripts",
+            Content = "Scripts Successfully Executed!",
+            Duration = 6,
+            Image = "check",
+        })
+        task.wait(0.5)
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/zeutronxsite/2CHCDGJVDistictV3/refs/heads/main/GxHqbZZLua"))()
         end)
     end
 end
 
 local Dropdown = MainTab:CreateDropdown({
     Name = "Select Scripts",
-    Options = {"BolongHub [FREE]", "WisnuHub [FREE]", "W424HUB [FREE]"},
+    Options = {"BolongHub [FREE]", "WisnuHub [FREE]", "W424HUB [FREE]", "4LynxX [FREE]"},
     CurrentOption = {"None"},
     MultipleOptions = false,
     Flag = "Dropdown1",
