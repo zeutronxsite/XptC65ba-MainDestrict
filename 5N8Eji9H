@@ -78,6 +78,7 @@ local function runScript(optionName)
         task.wait(0.5)
         pcall(function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/zeutronxsite/N8GYFQc7DestrictV3/refs/heads/main/nTon3cet"))()
+        end)
 
     elseif optionName == "4LynxX [FREE]" then
         Rayfield:Notify({
